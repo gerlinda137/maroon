@@ -1,0 +1,17 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  background-color: transparent;
+  padding: 32px 90px;
+  box-sizing: border-box;
+  position: fixed;
+
+  &--on-scroll {
+    background-color: $main-bg-color;
+    border-bottom: 1px solid $line-color;
+    transition: 0.3s;
+  }
+
+}
