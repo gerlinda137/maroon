@@ -8,6 +8,10 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
+var webpack = require('webpack');
+var webpackStream = require('webpack-stream');
+var webpackConfig = require('./webpack.config.js');
+
 
 gulp.task("css", function () {
   return gulp
@@ -21,6 +25,13 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp
+    .src('./source/js/index.js')
+    .pipe(webpackStream(webpackConfig), webpack)
+    .pipe(gulp.dest('./build/js'));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -31,7 +42,7 @@ gulp.task("copy", function () {
       [
         "source/fonts/**/*.{woff,woff2}",
         "source/img/**",
-        "source/js/**",
+        // "source/js/**",
         "source/*.html",
         "source/*.ico"
       ], {
@@ -58,5 +69,5 @@ gulp.task("server", function () {
   gulp.watch("source/**", gulp.series("build", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js"));
 gulp.task("start", gulp.series("build", "server"));
