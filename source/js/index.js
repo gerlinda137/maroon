@@ -1,33 +1,34 @@
-// import header from 'header.js';
+// import header from 'header.js'
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/swiper-bundle.css';
 
-import Swiper from 'swiper';
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
 
+var indexSwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  slidesPerView: 4,
+  width: 968,
+  spaceBetween: 30,
+  direction: 'horizontal',
+  loop: true,
 
-// init Swiper:
-const indexSwiper = new Swiper('.swiper-container', {
-  // // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-  // // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-});
-
-
-console.log("hhhhhhhhhhhhhhhhhh");
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
 
 const mainHeader = document.querySelector('.main-header');
 

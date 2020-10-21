@@ -1,0 +1,9 @@
+.bestsellers {
+  display: flex;
+
+  &__slider {
+    max-width: 1680px;
+
+    z-index: 2;
+  }
+}
