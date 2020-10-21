@@ -4,4 +4,17 @@
   &__item {
     margin-right: 35px;
   }
+
+  &__item-link {
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+
+    &:active {
+      opacity: 0.2;
+      transition: 0.3s;
+    }
+  }
 }
