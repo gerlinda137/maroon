@@ -39,11 +39,16 @@
   &__link {
     @include index-button;
     padding: 7px 27px 10px 27px;
+    transition: 0.3s;
 
     &:hover {
-      opacity: 0.5;
-      background-color: #ffffff;
-      transform: 0.3s;
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: rgb(255, 255, 255);
     }
   }
 }

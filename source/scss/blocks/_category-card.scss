@@ -14,6 +14,11 @@
     transition: 0.2s;
   }
 
+  &__link:active .category-card__text {
+    opacity: 0.5;
+    color: darken($color: $dark-blue, $amount: 50%);
+  }
+
   &__img {
     margin-bottom: 5px;
   }
