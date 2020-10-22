@@ -92,21 +92,30 @@
   max-width: 1680px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 26px;
-  height: 12px;
-  background-size: cover;
-  background-repeat: no-repeat;
+.swiper-buttons {
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    width: 26px;
+    height: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-button-prev {
+    background-image: url('../../img/swiper-prev.svg');
+  }
+
+  .swiper-button-next {
+    background-image: url('../../img/swiper-next.svg');
+  }
+
 }
 
-.swiper-button-prev {
-  background-image: url('../../img/swiper-prev.svg');
-}
-
-.swiper-button-next {
-  background-image: url('../../img/swiper-next.svg');
-}
 
 
 .swiper-button-prev::after,
