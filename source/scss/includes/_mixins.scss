@@ -24,3 +24,10 @@
   font-size: 32px;
   line-height: 42px;
 }
+
+@mixin section-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}

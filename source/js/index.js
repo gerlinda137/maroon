@@ -7,9 +7,10 @@ Swiper.use([Navigation, Pagination]);
 
 var indexSwiper = new Swiper('.swiper-container', {
   // Optional parameters
-  slidesPerView: 4,
-  width: 968,
+  slidesPerView: 'auto',
   spaceBetween: 30,
+  // width: 968,
+  // spaceBetween: 0,
   direction: 'horizontal',
   loop: true,
 

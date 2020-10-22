@@ -34,3 +34,13 @@ ul {
   height: 1px;
   margin: -1px;
 }
+
+.section-title {
+  @include section-title;
+  margin: 0;
+}
+
+.section-info {
+  @include section-info;
+  margin: 0;
+}
