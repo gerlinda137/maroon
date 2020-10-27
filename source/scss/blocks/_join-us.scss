@@ -1,0 +1,44 @@
+.join-us {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+
+  &__gallery {
+    display: grid;
+    grid-template: repeat(3, 233px)/repeat(3, 233px);
+    grid-row-gap: 0;
+    margin-right: 70px;
+  }
+
+  &__txt-container {
+    padding-top: 138px;
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 381px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    white-space: nowrap;
+    margin-bottom: -4px;
+  }
+
+  &__link {
+    @include index-button;
+    padding: 6px 34px 11px 33px;
+
+
+    &:hover {
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
