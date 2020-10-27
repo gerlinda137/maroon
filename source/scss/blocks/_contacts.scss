@@ -1,0 +1,44 @@
+.contacts {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 140px;
+
+  &__txt-container {
+    background-color: $section-bg-color;
+    padding-top: 91px;
+    padding-left: 100px;
+    padding-right: 312px;
+    padding-bottom: 92px;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__subtitle {
+    margin-bottom: 7px;
+  }
+
+  &__txt {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    width: 256px;
+  }
+
+  &__list {
+    margin-bottom: 36px;
+  }
+
+  &__map-container {
+    max-width: 670px;
+    overflow: hidden;
+    margin-top: 65px;
+    margin-left: -165px;
+
+    iframe {
+      border: none;
+    }
+  }
+}

@@ -2,10 +2,11 @@
   display: flex;
   margin: 0 auto;
   max-width: 1170px;
+  margin-bottom: 140px;
 
   &__gallery {
     display: grid;
-    grid-template: repeat(3, 233px)/repeat(3, 233px);
+    grid-template: repeat(2, 233px)/repeat(3, 233px);
     grid-row-gap: 0;
     margin-right: 70px;
   }

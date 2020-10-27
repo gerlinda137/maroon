@@ -8,15 +8,12 @@
 /*Блоки*/
 //Хедер
 @import "blocks/main-header";
-// @import "blocks/logo-and-main-nav-wrapper";
 @import "blocks/main-nav";
 @import "blocks/menu-list";
 @import "blocks/user-functions";
 
-// @import "blocks/purchase-options";
 
 // главная
-// @import "blocks/page-main";
 @import "blocks/main-screen";
 @import "blocks/category-card";
 @import "blocks/bestsellers";
@@ -24,15 +21,10 @@
 @import "blocks/personal-care";
 @import "blocks/our-story";
 @import "blocks/join-us";
-// @import "blocks/section-title";
-// @import "blocks/price";
-// @import "blocks/comments";
-// @import "blocks/sale";
-// @import "blocks/categories";
-// @import "blocks/sale-chairs";
-// @import "blocks/sale-card";
+@import "blocks/contacts";
+@import "blocks/socials";
 
 // //Футер
-// @import "blocks/main-footer";
-// @import "blocks/footer-nav";
+@import "blocks/main-footer";
+@import "blocks/footer-nav";
 // @import "blocks/footer-contacts";
