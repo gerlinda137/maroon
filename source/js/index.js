@@ -34,7 +34,7 @@ var indexSwiper = new Swiper('.swiper-container', {
 const mainHeader = document.querySelector('.main-header');
 
 window.onscroll = function showHeader() {
-  if (window.pageYOffset > 85) {
+  if (window.pageYOffset > 1) {
     mainHeader.classList.add('main-header--on-scroll');
   } else {
     mainHeader.classList.remove('main-header--on-scroll');

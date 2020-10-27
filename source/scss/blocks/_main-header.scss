@@ -7,12 +7,16 @@
   padding: 40px 98px;
   box-sizing: border-box;
   position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
 
   &--on-scroll {
     background-color: $main-bg-color;
     border-bottom: 1px solid $line-color;
     transition: 0.3s;
-    z-index: 100;
   }
 
   &__logo {
