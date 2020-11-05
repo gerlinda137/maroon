@@ -33,3 +33,13 @@
   }
 
 }
+
+@media (max-width: 1200px) {
+  .main-header {
+    padding: 40px 45px;
+
+    &__logo {
+      order: 1;
+    }
+  }
+}

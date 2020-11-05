@@ -18,3 +18,27 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .menu-list {
+    flex-direction: column;
+    display: none;
+    margin-top: 50px;
+
+    &--show {
+      display: flex;
+    }
+
+    &__item {
+      margin-bottom: 40px;
+    }
+
+    &__item-link {
+      font-family: $raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

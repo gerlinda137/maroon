@@ -31,6 +31,8 @@ var indexSwiper = new Swiper('.swiper-container', {
   },
 })
 
+//show menu on scroll
+
 const mainHeader = document.querySelector('.main-header');
 
 window.onscroll = function showHeader() {
@@ -42,3 +44,27 @@ window.onscroll = function showHeader() {
 
 }
 
+//show menu on btn click
+
+const menu = document.querySelector('.menu-list');
+const menuBtn = document.querySelector('.main-nav__button');
+const menuSocials = document.querySelector('.main-nav__socials');
+const header = document.querySelector('.main-header');
+
+let menuOpened;
+
+menuBtn.onclick = function () {
+  if (!menuOpened) {
+    menu.classList.add('menu-list--show');
+    menuSocials.style = 'display: flex';
+    header.classList.add('main-header--on-scroll');
+    menuBtn.classList.add('main-nav__button--close');
+    menuOpened= true;
+  } else if (menuOpened && window.innerWidth <= 1200) {
+    menu.classList.remove('menu-list--show');
+    menuSocials.style = 'display: none';
+    header.classList.remove('main-header--on-scroll');
+    menuBtn.classList.remove('main-nav__button--close');
+    menuOpened= false;
+  }
+}

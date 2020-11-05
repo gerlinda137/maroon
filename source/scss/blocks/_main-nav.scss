@@ -1,4 +1,41 @@
 .main-nav {
   display: flex;
   margin-left: auto;
+
+  &__button {
+    display: none;
+  }
+
+  ul.main-nav__socials {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .main-nav {
+    order: 0;
+    flex-direction: column;
+    margin-left: 0;
+
+    &__button {
+      display: block;
+      width: 24px;
+      height: 14px;
+      background-image: url('../img/burger.png');
+      background-size: cover;
+      border: none;
+      background-color: transparent;
+
+      &--close {
+        background-image: url('../img/close-button.png');
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    ul.main-nav__socials {
+      display: none;
+    }
+  }
 }

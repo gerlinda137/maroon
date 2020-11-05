@@ -18,3 +18,11 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .user-functions {
+    &__wrapper {
+      order: 2;
+    }
+  }
+}
