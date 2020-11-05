@@ -29,13 +29,23 @@
       content: '';
       width: 26px;
       height: 13px;
-      background-image: url('../../img/right-arrow.svg');
+      background-image: url('../img/right-arrow.svg');
       position: absolute;
       background-repeat: no-repeat;
       background-size: cover;
       right: 0;
       bottom: 7px;
 
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .category-card {
+    &__img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
