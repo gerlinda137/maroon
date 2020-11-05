@@ -290,6 +290,10 @@ ul {
       opacity: 0.3;
       background-color: white; }
 
+@media (max-width: 1200px) {
+  .main-screen__container {
+    grid-template-columns: 33% 33% 33%; } }
+
 .category-card {
   position: relative; }
   .category-card--face {
@@ -313,12 +317,18 @@ ul {
     content: '';
     width: 26px;
     height: 13px;
-    background-image: url("../../img/right-arrow.svg");
+    background-image: url("../img/right-arrow.svg");
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     right: 0;
     bottom: 7px; }
+
+@media (max-width: 1200px) {
+  .category-card__img {
+    display: block;
+    max-width: 100%;
+    height: auto; } }
 
 .bestsellers {
   display: -webkit-box;
@@ -431,9 +441,9 @@ ul {
       background-size: cover;
       background-repeat: no-repeat; }
   .bestsellers .swiper-button-prev {
-    background-image: url("../../img/swiper-prev.svg"); }
+    background-image: url("../img/swiper-prev.svg"); }
   .bestsellers .swiper-button-next {
-    background-image: url("../../img/swiper-next.svg");
+    background-image: url("../img/swiper-next.svg");
     margin-left: 34px; }
   .bestsellers .swiper-button-prev::after,
   .bestsellers .swiper-button-next::after {
@@ -443,7 +453,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("../../img/try-promo-banner.jpg");
+  background-image: url("../img/try-promo-banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-pack: end;
