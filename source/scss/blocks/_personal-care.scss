@@ -56,10 +56,21 @@
 
 @media (max-width: 1200px) {
   .personal-care {
+    padding-left: 45px;
+
+    &__txt-container {
+      padding: 60px 271px 60px 60px;
+    }
+
+    &__img-wrapper {
+      margin-left: -210px;
+    }
+
     &__img {
       display: block;
       max-width: 100%;
-      height: auto;
+      height: 398px;
+      object-fit: cover;
     }
   }
 }

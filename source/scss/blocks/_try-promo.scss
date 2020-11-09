@@ -41,3 +41,17 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .try-promo {
+    background-position-x: 55%;
+
+    &__wrapper {
+      padding-right: 85px;
+    }
+
+    &__title {
+      white-space: nowrap;
+    }
+  }
+}

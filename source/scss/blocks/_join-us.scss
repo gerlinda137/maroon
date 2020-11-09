@@ -46,6 +46,10 @@
 
 @media (max-width: 1200px) {
   .join-us {
+    justify-content: center;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 45px;
 
     &__gallery {
       grid-template: repeat(2, 177px)/repeat(2, 177px);
@@ -57,6 +61,21 @@
       &--fourth {
         display: none;
       }
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &__txt-container {
+      max-width: 276px;
+      padding-top: 0;
+    }
+
+    &__title {
+      white-space: initial;
     }
   }
 }
