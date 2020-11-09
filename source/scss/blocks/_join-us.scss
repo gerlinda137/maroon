@@ -43,3 +43,20 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .join-us {
+
+    &__gallery {
+      grid-template: repeat(2, 177px)/repeat(2, 177px);
+    }
+
+    &__img-container {
+
+      &--first,
+      &--fourth {
+        display: none;
+      }
+    }
+  }
+}

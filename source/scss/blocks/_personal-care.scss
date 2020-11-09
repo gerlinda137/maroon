@@ -52,3 +52,14 @@
     margin-left: -171px;
   }
 }
+
+
+@media (max-width: 1200px) {
+  .personal-care {
+    &__img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
