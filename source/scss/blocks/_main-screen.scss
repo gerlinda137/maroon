@@ -77,3 +77,49 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .main-screen {
+    margin-bottom: 15px;
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: -5px;
+    }
+
+    &__info {
+      font-size: 16px;
+      line-height: 22.4px;
+      margin-bottom: 24px;
+    }
+
+    &__container {
+      grid-template-areas:
+        "info info"
+        "card1 card2";
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 53px;
+      row-gap: 33px;
+      grid-template-columns: 46% 46%;
+    }
+
+    &__info-card {
+      order: 0;
+      position: static;
+      grid-area: info;
+      transform: unset;
+      margin: 0 auto;
+      left: 0;
+      top: 0;
+      width: 100%;
+      min-width: 0;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

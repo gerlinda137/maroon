@@ -28,3 +28,22 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .user-functions {
+    margin-left: 20px;
+
+    &__item {
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+
+    &__item-link svg {
+      width: 13px;
+      height: 16px;
+    }
+  }
+
+}

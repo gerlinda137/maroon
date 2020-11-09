@@ -49,3 +49,26 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .category-card {
+    &--face {
+      order: 1;
+      grid-area: card1;
+    }
+
+    &--body {
+      order: 2;
+      grid-area: card2;
+    }
+
+    &__text {
+      font-size: 12px;
+
+      &::after {
+        width: 23px;
+        height: 10px;
+      }
+    }
+  }
+}
