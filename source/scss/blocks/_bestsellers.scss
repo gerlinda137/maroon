@@ -31,6 +31,10 @@
       opacity: 0.3;
       background-color: rgb(255, 255, 255);
     }
+
+    &--mobile {
+      display: none;
+    }
   }
 
   &__slider {
@@ -165,10 +169,44 @@
 
 @media (max-width: 768px) {
   .bestsellers {
-    padding-left: 65px;
+    padding-left: 0;
+    flex-direction: column;
+    margin-bottom: 80px;
 
     &__info {
       text-align: center;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 22.4px;
+      width: 200px;
+    }
+
+    &__link {
+      display: none;
+
+      &--mobile {
+        display: block;
+        margin: 0 auto;
+        padding: 6px 27px 11px 25px;
+        margin-top: -27px;
+        font-size: 14px;
+      }
+    }
+
+    .swiper-container {
+      margin-left: 50px;
+    }
+
+    .swiper-buttons {
+      display: none;
     }
   }
 }
