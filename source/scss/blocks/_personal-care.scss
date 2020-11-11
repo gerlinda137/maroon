@@ -74,3 +74,63 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .personal-care {
+    padding: 0 15px;
+
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__txt-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 32px 180px 32px;
+    }
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+      line-height: 35px;
+      white-space: unset;
+      width: 228px;
+      margin: 0 auto;
+      margin-bottom: 13px;
+    }
+
+    &__info {
+      font-size: 16px;
+      line-height: 22.4px;
+      text-align: center;
+      width: 226px;
+      margin: 0 auto;
+
+      &--hidden {
+        display: none;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: -23px;
+      width: 182px;
+    }
+
+    &__img-wrapper {
+      margin: 0 auto;
+      width: 86.1%;
+      margin-top: -130px;
+    }
+
+    &__img {
+      height: 252px;
+    }
+  }
+
+}
