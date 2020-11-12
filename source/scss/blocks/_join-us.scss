@@ -79,3 +79,42 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .join-us {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__gallery {
+      order: 1;
+      margin: 0;
+      grid-template: repeat(2, 145px)/repeat(2, 145px);
+    }
+
+    &__txt-container {
+      order: 0;
+      text-align: center;
+      margin-bottom: 61px;
+    }
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+      line-height: 35px;
+    }
+
+    &__info {
+      font-size: 16px;
+      line-height: 22.4px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      font-size: 14px;
+      margin-bottom: 60px;
+      padding: 7px 28px 12px 27px;
+    }
+  }
+}
