@@ -56,3 +56,24 @@
   }
 
 }
+
+
+@media (max-width: 768px) {
+  .our-story {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    &__info {
+      font-size: 22px;
+      line-height: 27.5px;
+      width: 100%;
+      padding-top: 55px;
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      font-size: 14px;
+      margin-bottom: 60px;
+    }
+  }
+}
