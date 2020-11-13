@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .personal-care {
     padding: 0 15px;
@@ -90,7 +90,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 30px 32px 180px 32px;
+      padding: 51px 32px 180px 32px;
     }
 
     &__title {
@@ -121,6 +121,7 @@
       margin: 0 auto;
       margin-top: -23px;
       width: 182px;
+      white-space: nowrap;
     }
 
     &__img-wrapper {

@@ -40,3 +40,13 @@
     }
   }
 }
+
+
+@media (max-width: 767px) {
+  .main-nav {
+
+    &__socials {
+      margin-bottom: 100px;
+    }
+  }
+}

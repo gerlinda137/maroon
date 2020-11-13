@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-footer {
     &__container {
       flex-direction: column;
@@ -92,7 +92,7 @@
 
     &__logo-link {
       margin-right: 0;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     &__logo-link svg {
@@ -103,9 +103,10 @@
     &__credits-container {
       flex-direction: column;
       align-items: unset;
-      padding-top: 12px;
-      padding-left: 15px;
-      padding-right: 0;
+      // padding-top: 12px;
+      // padding-left: 15px;
+      // padding-right: 0;
+      padding: 12px 0 25px 15px;
     }
   }
 

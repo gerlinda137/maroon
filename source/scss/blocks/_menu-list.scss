@@ -42,3 +42,17 @@
     }
   }
 }
+
+
+@media (max-width: 767px) {
+  .menu-list {
+
+    &__item {
+      margin-bottom: 35px;
+    }
+
+    &__item-link {
+      font-size: 28px;
+    }
+  }
+}

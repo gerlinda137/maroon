@@ -56,12 +56,12 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .try-promo {
     justify-content: center;
     background-image: url('../img/try-promo-mobile.jpg');
     background-position: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     &__wrapper {
       padding-right: 0;

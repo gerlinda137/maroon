@@ -47,11 +47,28 @@ window.onscroll = function showHeader() {
 //show menu on btn click
 
 const menu = document.querySelector('.menu-list');
-const menuBtn = document.querySelector('.main-nav__button');
+const nav = document.querySelector('.main-nav');
+const menuBtn = nav.querySelector('.main-nav__button');
 const menuSocials = document.querySelector('.main-nav__socials');
 const header = document.querySelector('.main-header');
+const headerLogo = header.querySelector('.main-header__logo');
 
 let menuOpened;
+
+let adjustMenuOnClick = function () {
+  if (menuOpened) {
+    nav.style = 'margin-right: 0';
+    headerLogo.style = 'margin-left: -35%';
+  }
+}
+
+let resetMenuOnClose = function () {
+  if (!menuOpened) {
+    nav.removeAttribute('style');
+    headerLogo.removeAttribute('style');
+  }
+}
+
 
 menuBtn.onclick = function () {
   if (!menuOpened) {
@@ -60,11 +77,15 @@ menuBtn.onclick = function () {
     header.classList.add('main-header--on-scroll');
     menuBtn.classList.add('main-nav__button--close');
     menuOpened= true;
+    adjustMenuOnClick();
   } else if (menuOpened && window.innerWidth <= 1200) {
     menu.classList.remove('menu-list--show');
     menuSocials.style = 'display: none';
     header.classList.remove('main-header--on-scroll');
     menuBtn.classList.remove('main-nav__button--close');
     menuOpened= false;
+    resetMenuOnClose();
   }
 }
+
+
