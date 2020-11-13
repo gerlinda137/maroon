@@ -20,3 +20,24 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer-nav {
+    margin-bottom: 13px;
+
+    &__list {
+      justify-content: flex-start;
+      width: 230px;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      margin-right: 35px;
+      margin-bottom: 12px;
+
+      &:nth-child(3) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
