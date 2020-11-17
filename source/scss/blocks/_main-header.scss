@@ -13,7 +13,8 @@
   left: 0;
   right: 0;
 
-  &--on-scroll {
+  &--on-scroll,
+  &--catalog {
     background-color: $main-bg-color;
     border-bottom: 1px solid $line-color;
     transition: 0.3s;

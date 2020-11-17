@@ -1,0 +1,45 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  padding-top: 141px;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+
+  &__filter-btn {
+    @include index-button;
+    padding: 7px 41px 11px 41px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__products-grid {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 45px;
+  }
+}
