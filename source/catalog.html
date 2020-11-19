@@ -88,11 +88,149 @@
     </div>
   </header>
   <main class="page-main">
+    <h1 class="page-main__title visually-hidden">Каталог</h1>
     <section class="catalog">
       <div class="catalog__top-wrapper">
         <h2 class="catalog__title section-title">Каталог</h2>
         <button class="catalog__filter-btn" type="button">Фильтр</button>
-        <!-- сюда выпадающий фильтр-->
+      </div>
+      <div class="catalog__filter-wrapper">
+        <form class="filter" action="submit">
+          <div class="filter__container">
+            <div class="filter__column filter__column--face">
+              <h3 class="filter__column-title">Уход для лица</h3>
+              <ul class="checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Крема
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Сыворотки
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Маски
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Пенки
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Тоники
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Пудры
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__column filter__column--body">
+              <h3 class="filter__column-title">Уход для тела</h3>
+              <ul class="checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Крема
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Масла
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Скрабы
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Мыло
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Бомбочки для ванны
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Соль для ванны
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__column filter__column--skin">
+              <h3 class="filter__column-title">Тип кожи</h3>
+              <ul class="checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Нормальная
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Сухая
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Жирная
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Комбинированная
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__buttons">
+              <button class="filter__button" type="submit">Применить</button>
+              <button class="filter__button" type="reset">Сбросить</button>
+            </div>
+          </div>
+        </form>
+
       </div>
       <div class="catalog__products-grid">
         <div class="card catalog__card">
@@ -304,7 +442,7 @@
             </div>
           </a>
         </div>
-        <div class="card catalog__card">
+        <div class="card recent__card">
           <a class="card__link" href="#">
             <img class="card__img" src="img/product11.jpg" width="270" height="350" alt="Фото продукта">
             <div class="card__txt-container">
@@ -319,7 +457,7 @@
             </div>
           </a>
         </div>
-        <div class="card catalog__card">
+        <div class="card recent__card">
           <a class="card__link" href="#">
             <img class="card__img" src="img/product10.jpg" width="270" height="350" alt="Фото продукта">
             <div class="card__txt-container">
@@ -334,7 +472,7 @@
             </div>
           </a>
         </div>
-        <div class="card catalog__card">
+        <div class="card recent__card">
           <a class="card__link" href="#">
             <img class="card__img" src="img/product9.jpg" width="270" height="350" alt="Фото продукта">
             <div class="card__txt-container">
@@ -384,7 +522,7 @@
       </div>
       <div class="join-us__txt-container">
         <h2 class="join-us__title section-title">Присоединяйтесь к нам</h2>
-        <p class="join-us__info section__info">
+        <p class="join-us__info section-info">
           Подпишитесь на наш аккаунт <a class="join-us__inner-link" href="#">@marooncare</a>
           и узнавайте о новиках и акциях первыми
         </p>
@@ -526,6 +664,7 @@
       </div>
     </div>
   </footer>
+  <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
   <script src="js/bundle.js"></script>
 </body>
 

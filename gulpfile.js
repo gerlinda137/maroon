@@ -59,7 +59,12 @@ gulp.task("refresh", function (done) {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: {
+      baseDir:'build',
+      routes: {
+        '/node_modules': 'node_modules'
+      }
+    } ,
     notify: false,
     open: true,
     cors: true,

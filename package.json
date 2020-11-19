@@ -25,6 +25,7 @@
     "webpack-stream": "^6.1.0"
   },
   "dependencies": {
+    "focus-visible": "^5.2.0",
     "normalize.css": "^8.0.1",
     "swiper": "^6.3.4"
   },
