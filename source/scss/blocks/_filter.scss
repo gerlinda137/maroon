@@ -53,6 +53,17 @@
     padding: 8px 33px 8px;
     border-radius: 2px;
     border: solid 1px #122947;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+      transition: .3s;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: .3s;
+    }
 
     &:first-child {
       padding: 8px 26px 8px;

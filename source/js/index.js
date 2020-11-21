@@ -88,4 +88,29 @@ menuBtn.onclick = function () {
   }
 }
 
+//открытие-закрытие фильтра
 
+
+const filter = document.querySelector('.catalog__filter-wrapper');
+const filterBtn = document.querySelector('.catalog__filter-btn');
+const filterCloseBtn = document.querySelector('.catalog__close-btn');
+
+let filterOpened;
+
+filterBtn.onclick = function () {
+  if (!filterOpened) {
+    filter.classList.remove('catalog__filter-wrapper--hidden');
+    filterBtn.classList.add('catalog__filter-btn--hidden');
+    filterCloseBtn.classList.remove ('catalog__close-btn--hidden');
+    filterOpened = true;
+  }
+}
+
+filterCloseBtn.onclick = function () {
+  if (filterOpened) {
+    filter.classList.add('catalog__filter-wrapper--hidden');
+    filterBtn.classList.remove('catalog__filter-btn--hidden');
+    filterCloseBtn.classList.add ('catalog__close-btn--hidden');
+    filterOpened = false;
+  }
+}

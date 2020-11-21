@@ -29,6 +29,27 @@
       opacity: 0.3;
       background-color: rgb(255, 255, 255);
     }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__close-btn {
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/close-btn.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin-top: 12px;
+
+    &--hidden {
+      display: none;
+    }
+
   }
 
   &__title {
@@ -47,6 +68,12 @@
     box-shadow: 0 6px 4px -4px rgba(214, 214, 214, 0.19);
     margin: 0 auto;
     top: 220px;
+    opacity: 1;
+    transition: 0.3s opacity;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__products-grid {
