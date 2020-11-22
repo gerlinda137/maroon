@@ -72,3 +72,22 @@
   }
 
 }
+
+
+@media (max-width: 1200px) {
+  .filter {
+    margin-left: 0;
+
+    &__container {
+      grid-template-areas:
+        'face body skin'
+        'face body skin'
+        'buttons buttons buttons';
+    }
+
+    &__buttons {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}

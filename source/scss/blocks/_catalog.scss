@@ -86,3 +86,21 @@
     margin-bottom: 45px;
   }
 }
+
+@media (max-width: 1200px) {
+  .catalog {
+    max-width: 1110px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &__filter-wrapper {
+      max-width: 1110px;
+      overflow: hidden;
+    }
+
+    &__products-grid {
+      grid-template-columns: repeat(2, 47.6%);
+      column-gap: 4.63%;
+    }
+  }
+}
