@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header main-header--catalog">
     <a href="index.html" class="main-header__logo">
       <svg width="131" height="21" viewbox="0 0 131 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -88,120 +88,418 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="main-screen">
-      <div class="main-screen__container">
-        <div class="category-card category-card--face">
-          <a href="" class="category-card__link">
-            <img src="img/facial-care.jpg" alt="Уход для лица" class="category-card__img">
-            <span class="category-card__text">Уход для лица</span>
+    <h1 class="page-main__title visually-hidden">Каталог</h1>
+    <section class="catalog">
+      <div class="catalog__top-wrapper">
+        <h2 class="catalog__title section-title">Каталог</h2>
+        <button class="catalog__filter-btn" type="button">Фильтр</button>
+        <button class="catalog__close-btn catalog__close-btn--hidden" aria-label="Скрыть фильтр" type="button"></button>
+      </div>
+      <div class="catalog__filter-wrapper catalog__filter-wrapper--hidden ">
+        <form class="filter" action="submit">
+          <div class="filter__container">
+            <div class="filter__column filter__column--face">
+              <h3 class="filter__column-title">Уход для лица</h3>
+              <ul class="checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Крема
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Сыворотки
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Маски
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Пенки
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Тоники
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Пудры
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__column filter__column--body">
+              <h3 class="filter__column-title">Уход для тела</h3>
+              <ul class="checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Крема
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Масла
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Скрабы
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Мыло
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Бомбочки для ванны
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Соль для ванны
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__column filter__column--skin">
+              <h3 class="filter__column-title">Тип кожи</h3>
+              <ul class="checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Нормальная
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Сухая
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Жирная
+                  </label>
+                </li>
+                <li class="checkboxes__item">
+                  <label class="checkboxes__label">
+                    <input class="visually-hidden" checked type="checkbox" name="" id="">
+                    <span class="checkboxes__custom-box"></span>
+                    Комбинированная
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__buttons">
+              <button class="filter__button" type="submit">Применить</button>
+              <button class="filter__button" type="reset">Сбросить</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="catalog__products-grid">
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product1.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">High</h3>
+                <span class="card__product-type">крем для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">990 ₽</span>
+                <span class="card__size">50ml</span>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="category-card category-card--body">
-          <a href="" class="category-card__link">
-            <img src="img/body-care.jpg" alt="Уход для тела" class="category-card__img">
-            <span class="category-card__text">Уход для тела</span>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product2.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Rest</h3>
+                <span class="card__product-type">минеральная пудра</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">690 ₽</span>
+                <span class="card__size">20g</span>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="main-screen__info-card">
-          <h1 class="main-screen__title">Maroon</h1>
-          <p class="main-screen__info">Натуральная косметика<br>для бережного ухода за кожей</p>
-          <a class="main-screen__link" href="#">Подробнее</a>
-        </div>
-      </div>
-    </section>
-    <section class="bestsellers">
-      <div class="bestsellers__info">
-        <h2 class="bestsellers__title section-title">Бестселлеры</h2>
-        <p class="bestsellers__description section-info">
-          Легендарные продукты,
-          завоевавшие любовь
-          наших клиентов
-        </p>
-        <a class="bestsellers__link" href="#">Смотреть все</a>
-      </div>
-      <div class="swiper-container bestsellers__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide bestsellers__card">
-            <img src="img/creme1.jpg" alt="Фото продукта" class="bestseller-card__img">
-            <div class="bestsellers__card-info">
-              <h3 class="bestsellers__card-title">High</h3>
-              <span class="bestsellers__card-caption">крем для лица</span>
-              <a href="#" class="bestsellers__card-link">Подробнее</a>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product3.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Rose</h3>
+                <span class="card__product-type">крем для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">890 ₽</span>
+                <span class="card__size">50ml</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide bestsellers__card">
-            <img src="img/creme2.jpg" alt="Фото продукта" class="bestseller-card__img">
-            <div class="bestsellers__card-info">
-              <h3 class="bestsellers__card-title">Rest</h3>
-              <span class="bestsellers__card-caption">минеральная пудра</span>
-              <a href="#" class="bestsellers__card-link bestsellers__card-link--powder">Подробнее</a>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product4.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Milk</h3>
+                <span class="card__product-type">масло для тела</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">790 ₽</span>
+                <span class="card__size">150ml</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide bestsellers__card">
-            <img src="img/creme3.jpg" alt="Фото продукта" class="bestseller-card__img">
-            <div class="bestsellers__card-info">
-              <h3 class="bestsellers__card-title">Rose</h3>
-              <span class="bestsellers__card-caption">крем для лица</span>
-              <a href="#" class="bestsellers__card-link">Подробнее</a>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product5.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Paradise</h3>
+                <span class="card__product-type">минеральная пудра</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">590 ₽</span>
+                <span class="card__size">15g</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide bestsellers__card">
-            <img src="img/creme4.jpg" alt="Фото продукта" class="bestseller-card__img">
-            <div class="bestsellers__card-info">
-              <h3 class="bestsellers__card-title">Milk</h3>
-              <span class="bestsellers__card-caption">масло для тела</span>
-              <a href="#" class="bestsellers__card-link">Подробнее</a>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product6.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Sun</h3>
+                <span class="card__product-type">бомбочка для ванны</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">90 ₽</span>
+                <span class="card__size">20g</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="swiper-buttons">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product7.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Violet</h3>
+                <span class="card__product-type">крем для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">890 ₽</span>
+                <span class="card__size">50ml</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product8.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Clean</h3>
+                <span class="card__product-type">маска для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">490 ₽</span>
+                <span class="card__size">100g</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product9.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Coconut</h3>
+                <span class="card__product-type">масло для тела</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">990 ₽</span>
+                <span class="card__size">300ml</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product10.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Lavender</h3>
+                <span class="card__product-type">мыло ручной работы</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">290 ₽</span>
+                <span class="card__size">50g</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product11.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Lotos</h3>
+                <span class="card__product-type">маска для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">890 ₽</span>
+                <span class="card__size">50ml</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card catalog__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product12.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Earth</h3>
+                <span class="card__product-type">бомбочка для ванны</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">90 ₽</span>
+                <span class="card__size">20g</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-      <a class="bestsellers__link bestsellers__link--mobile" href="#">Смотреть все</a>
-    </section>
-    <section class="try-promo">
-      <div class="try-promo__wrapper">
-        <h2 class="try-promo__title section-title">Встречайте весну <br> вместе с нами</h2>
-        <p class="try-promo__info section-info">Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой
-        </p>
-        <a class="try-promo__link" href="#">Подробнее</a>
+      <div class="pagination catalog__pagination">
+        <span class="pagination__current-page">1</span>
+        <span class="pagination__dash"></span>
+        <span class="pagination__max-page">8</span>
+      </div>
+      <div class="control-buttons catalog__control-buttons">
+        <button class="control-buttons__prev" type="button" aria-label="Кнопка назад"></button>
+        <button class="control-buttons__next" type="button" aria-label="Кнопка вперед"></button>
       </div>
     </section>
-    <section class="personal-care">
-      <div class="personal-care__container">
-        <div class="personal-care__txt-container">
-          <h2 class="personal-care__title section-title">Индивидуальный уход</h2>
-          <p class="personal-care__info personal-care__info--hidden section-info">
-            Не всегда очевидно, какие элементы и минералы необходимы коже, <br> а многочисленные эксперименты <br> с
-            разными
-            средствами только ухудшают ее качество.
-          </p>
-          <p class="personal-care__info section-info">
-            Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая
-            ваш образ жизни, место жительства и другие
-            факторы.
-          </p>
-          <a class="personal-care__link" href="#">Заполнить анкету</a>
+    <section class="recent">
+      <h2 class="recent__title section-title">Вы недавно смотрели</h2>
+      <div class="recent__gallery">
+        <div class="card recent__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product8.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Clean</h3>
+                <span class="card__product-type">маска для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">490 ₽</span>
+                <span class="card__size">100g</span>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="personal-care__img-wrapper">
-          <img class="personal-care__img" src="img/personal-care-img.jpg" alt="Индивидуальный уход" width="670"
-            height="451">
+        <div class="card recent__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product11.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Lotos</h3>
+                <span class="card__product-type">маска для лица</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">890 ₽</span>
+                <span class="card__size">50ml</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card recent__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product10.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Lavender</h3>
+                <span class="card__product-type">мыло ручной работы</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">290 ₽</span>
+                <span class="card__size">50g</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card recent__card">
+          <a class="card__link" href="#">
+            <img class="card__img" src="img/product9.jpg" width="270" height="350" alt="Фото продукта">
+            <div class="card__txt-container">
+              <div class="card__title-wrapper">
+                <h3 class="card__title">Coconut</h3>
+                <span class="card__product-type">масло для тела</span>
+              </div>
+              <div class="card__price-wrapper">
+                <span class="card__price">990 ₽</span>
+                <span class="card__size">300ml</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
-    <section class="our-story">
-      <div class="our-story__container">
-        <h2 class="our-story__title visually-hidden">Наша миссия</h2>
-        <cite class="our-story__info">
-          “Мы стремимся сделать уход за кожей доступным
-          и приятным ритуалом для всех, кто хочет
-          заботиться о себе и своем теле”
-        </cite>
-        <a class="our-story__link" href="#">Наша история</a>
+      <div class="pagination recent__pagination">
+        <span class="pagination__current-page">1</span>
+        <span class="pagination__dash"></span>
+        <span class="pagination__max-page">3</span>
+      </div>
+      <div class="control-buttons recent__control-buttons">
+        <button class="control-buttons__prev" type="button" aria-label="Кнопка назад"></button>
+        <button class="control-buttons__next" type="button" aria-label="Кнопка вперед"></button>
       </div>
     </section>
+
     <section class="join-us">
       <div class="join-us__gallery">
         <div class="join-us__img-container join-us__img-container--first">
@@ -367,6 +665,7 @@
       </div>
     </div>
   </footer>
+  <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
   <script src="js/bundle.js"></script>
 </body>
 
