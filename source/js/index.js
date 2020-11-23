@@ -73,14 +73,14 @@ menuBtn.onclick = function () {
   if (!menuOpened) {
     menu.classList.add('menu-list--show');
     menuSocials.style = 'display: flex';
-    header.classList.add('main-header--on-scroll');
+    header.classList.add('main-header--opened-menu');
     menuBtn.classList.add('main-nav__button--close');
     menuOpened= true;
     adjustMenuOnClick();
   } else if (menuOpened && window.innerWidth <= 1200) {
     menu.classList.remove('menu-list--show');
     menuSocials.style = 'display: none';
-    header.classList.remove('main-header--on-scroll');
+    header.classList.remove('main-header--opened-menu');
     menuBtn.classList.remove('main-nav__button--close');
     menuOpened= false;
     resetMenuOnClose();

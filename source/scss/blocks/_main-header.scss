@@ -14,7 +14,8 @@
   right: 0;
 
   &--on-scroll,
-  &--catalog {
+  &--catalog,
+  &--opened-menu {
     background-color: $main-bg-color;
     border-bottom: 1px solid $line-color;
     transition: 0.3s;
