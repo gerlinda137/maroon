@@ -57,15 +57,14 @@ let menuOpened;
 
 let adjustMenuOnClick = function () {
   if (menuOpened) {
-    nav.style = 'margin-right: 0';
-    headerLogo.style = 'margin-left: -35%';
+    headerLogo.classList.add('main-header__logo--opened-menu');
+
   }
 }
 
 let resetMenuOnClose = function () {
   if (!menuOpened) {
-    nav.removeAttribute('style');
-    headerLogo.removeAttribute('style');
+    headerLogo.classList.remove('main-header__logo--opened-menu');
   }
 }
 

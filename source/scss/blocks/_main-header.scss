@@ -41,6 +41,12 @@
 
     &__logo {
       order: 1;
+
+      &--opened-menu {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
     }
   }
 }
