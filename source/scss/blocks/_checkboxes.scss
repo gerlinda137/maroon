@@ -41,3 +41,15 @@
     position: absolute;
   }
 }
+
+@media (max-width: 767px) {
+  .checkboxes {
+    display: none;
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}

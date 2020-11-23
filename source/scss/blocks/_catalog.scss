@@ -59,7 +59,6 @@
   &__filter-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: -15px;
     position: absolute;
     z-index: 10;
     background-color: $main-bg-color;
@@ -67,6 +66,7 @@
     max-width: 1200px;
     box-shadow: 0 6px 4px -4px rgba(214, 214, 214, 0.19);
     margin: 0 auto;
+    margin-top: -15px;
     top: 220px;
     opacity: 1;
     transition: 0.3s opacity;
@@ -92,15 +92,40 @@
     max-width: 1110px;
     padding-left: 45px;
     padding-right: 45px;
+    position: relative;
+    overflow: hidden;
 
     &__filter-wrapper {
       max-width: 1110px;
-      overflow: hidden;
     }
 
     &__products-grid {
       grid-template-columns: repeat(2, 47.6%);
       column-gap: 4.63%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    padding-top: 106px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__products-grid {
+      grid-template-columns: 1fr;
+      column-gap: 4.63%;
+    }
+
+    &__filter-wrapper {
+      display: block;
+      padding-left: 20px;
+      padding-right: 50px;
+      margin-top: -40px;
     }
   }
 }

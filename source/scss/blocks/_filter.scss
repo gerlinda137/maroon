@@ -91,3 +91,78 @@
     }
   }
 }
+
+
+@media (max-width: 767px) {
+  .filter {
+    margin-left: 0;
+
+    &__container {
+      display: block;
+      margin-left: 0;
+    }
+
+    &__column {
+      margin-bottom: 0;
+      transition: .4s;
+
+      &--active {
+        margin-bottom: 31px;
+        transition: .5s;
+
+        .checkboxes {
+          display: block;
+        }
+
+        .filter__column-title::after {
+          background-image: url('../img/minus-symbol.svg');
+        }
+      }
+
+    }
+
+    &__column-title {
+      position: relative;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #DBDCE0;
+
+      &:after {
+        content: '';
+        font-size: inherit;
+        font-weight: 500;
+        color: inherit;
+        width: 12px;
+        height: 12px;
+        background-image: url('../img/plus-symbol.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        right: 0;
+        top: 7px;
+
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      width: 100%;
+
+    }
+
+    &__button {
+      font-size: 14px;
+
+      &:first-child {
+        padding: 6px 18px 10px;
+        margin-right: 20px;
+      }
+
+      &:last-child {
+        padding: 6px 25px 10px;
+      }
+
+    }
+  }
+}

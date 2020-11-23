@@ -114,3 +114,18 @@ filterCloseBtn.onclick = function () {
     filterOpened = false;
   }
 }
+
+//аккордеон фильтра
+const accordions = document.querySelectorAll('.filter__column');
+
+for ( const item of accordions) {
+  item.addEventListener('click', function () {
+    this.classList.toggle('filter__column--active')
+  })
+  item.addEventListener('keydown', function (e) {
+    if (13 == e.keyCode) {
+      this.classList.toggle('filter__column--active')
+    }
+  })
+
+}

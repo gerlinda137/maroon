@@ -1,8 +1,14 @@
+const TerserPlugin = require('terser-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   output: {
     filename: 'bundle.js',
   },
+  // optimization: {
+  //   minimize: true,
+  //   minimizer: [new TerserPlugin()],
+  // },
   module: {
     rules: [
       {
