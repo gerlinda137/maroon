@@ -95,6 +95,9 @@
       margin-top: -40px;
       padding-left: 15px;
       padding-right: 15px;
+      max-width: none;
+      overflow: unset;
+      width: 100%;
 
       iframe {
         display: block;

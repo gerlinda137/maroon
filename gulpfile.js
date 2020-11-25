@@ -6,6 +6,7 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require('gulp-csso');
 var server = require("browser-sync").create();
 var del = require("del");
 var webpack = require('webpack');
@@ -20,6 +21,7 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
