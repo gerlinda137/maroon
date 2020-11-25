@@ -1,6 +1,11 @@
 .try-promo {
   display: flex;
   background-image: url('../img/try-promo-banner.jpg');
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url('../img/try-promo-banner@2x.jpg');
+  }
+
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: flex-end;
@@ -44,10 +49,15 @@
 
 @media (max-width: 1200px) {
   .try-promo {
-    background-position-x: 55%;
+    background-image: url('../img/try-promo-banner-tablet.jpg');
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/try-promo-banner-tablet@2x.jpg');
+    }
 
     &__wrapper {
       padding-right: 85px;
+      width: unset;
     }
 
     &__title {
@@ -60,6 +70,11 @@
   .try-promo {
     justify-content: center;
     background-image: url('../img/try-promo-mobile.jpg');
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/try-promo-banner-mobile@2x.jpg');
+    }
+
     background-position: center;
     margin-bottom: 60px;
 

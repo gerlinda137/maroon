@@ -7,12 +7,18 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require('gulp-csso');
+var imagemin = require('gulp-imagemin');
 var server = require("browser-sync").create();
 var del = require("del");
 var webpack = require('webpack');
 var webpackStream = require('webpack-stream');
 var webpackConfig = require('./webpack.config.js');
 
+gulp.task('compress', function() {
+  gulp.src('img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/img'))
+});
 
 gulp.task("css", function () {
   return gulp

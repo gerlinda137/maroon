@@ -164,6 +164,10 @@
 @media (max-width: 1200px) {
   .bestsellers {
     padding-left: 45px;
+
+    &__info {
+      margin-right: 40px;
+    }
   }
 }
 

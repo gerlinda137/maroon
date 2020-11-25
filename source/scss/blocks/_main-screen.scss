@@ -1,7 +1,11 @@
 .main-screen {
-  background: url('../img/main-screen-bg.png') no-repeat 0 0/cover;
   padding-bottom: 63px;
   margin-bottom: 140px;
+  background: url('../img/main-screen-bg.png') no-repeat 0 0/cover;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url('../img/main-screen-bg@2x.png');
+  }
 
   &__container {
     max-width: 1070px;
@@ -59,6 +63,13 @@
 
 @media (max-width: 1200px) {
   .main-screen {
+    margin-bottom: 120px;
+    background: url('../img/main-screen-bg-tablet.png') no-repeat 0 0/cover;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/main-screen-bg-tablet@2x.png');
+    }
+
     &__container {
       grid-template-columns: 36% 36%;
       padding-left: 45px;
@@ -80,7 +91,14 @@
 
 
 @media (max-width: 767px) {
+
   .main-screen {
+    background: url('../img/main-screen-bg-mobile.png') no-repeat 0 0/cover;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/main-screen-bg-mobile@2x.png');
+    }
+
     margin-bottom: 15px;
 
     &__title {
