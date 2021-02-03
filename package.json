@@ -1,8 +1,8 @@
 {
-  "name": "design-furniture",
+  "name": "maroon",
   "version": "",
   "private": true,
-  "description": "Дизайнерская мебель",
+  "description": "Сайт магазина мебели",
   "devDependencies": {
     "@babel/preset-env": "^7.12.1",
     "@htmlacademy/editorconfig-cli": "1.x",

@@ -6,7 +6,7 @@
   <title>Maroon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description" content="Натуральная косметика для бережного ухода за кожей">
-  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="prefetch" href="js/bundle.js" as="script">
   <link href="css/style.css" rel="stylesheet" />
 </head>
@@ -506,22 +506,84 @@
     <section class="join-us">
       <div class="join-us__gallery">
         <div class="join-us__img-container join-us__img-container--first">
-          <img src="img/item1.jpg" alt="Фото продукта" class="join-us__img">
+          <picture>
+            <source srcset="img/item1@1x.webp 1x,
+                            img/item1@2x.webp 2x" type="image/webp">
+            <img src="img/item1@1x.jpg" srcset="img/item1@2x.jpg 2x" width="233" height="233" alt="Фото продукта"
+              class="join-us__img">
+          </picture>
         </div>
         <div class="join-us__img-container">
-          <img src="img/item2.jpg" alt="Фото продукта" class="join-us__img">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/item2-mobile@1x.webp 1x,
+            img/item2-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/item2-mobile@1x.jpg 1x,
+                            img/item2-mobile@2x.jpg 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item2-tablet@1x.webp 1x,
+                            img/item2-tablet@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item2-tablet@1x.jpg 1x,
+                            img/item2-tablet@2x.jpg 2x" type="image/webp">
+            <source srcset="img/item2@1x.webp 1x,
+                            img/item2@2x.webp 2x" type="image/webp">
+            <img src="img/item2@1x.jpg" srcset="img/item2@2x.jpg 2x" width="233" height="233" alt="Фото продукта"
+              class="join-us__img">
+          </picture>
         </div>
         <div class="join-us__img-container">
-          <img src="img/item3.jpg" alt="Фото продукта" class="join-us__img">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/item3-mobile@1x.webp 1x,
+            img/item3-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/item3-mobile@1x.jpg 1x,
+                            img/item3-mobile@2x.jpg 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item3-tablet@1x.webp 1x,
+                            img/item3-tablet@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item3-tablet@1x.jpg 1x,
+                            img/item3-tablet@2x.jpg 2x" type="image/webp">
+            <source srcset="img/item3@1x.webp 1x,
+                            img/item3@2x.webp 2x" type="image/webp">
+            <img src="img/item3@1x.jpg" srcset="img/item3@2x.jpg 2x" width="233" height="233" alt="Фото продукта"
+              class="join-us__img">
+          </picture>
         </div>
         <div class="join-us__img-container join-us__img-container--fourth">
-          <img src="img/item4.jpg" alt="Фото продукта" class="join-us__img">
+          <picture>
+            <source srcset="img/item4@1x.webp 1x,
+                            img/item4@2x.webp 2x" type="image/webp">
+            <img src="img/item4@1x.jpg" srcset="img/item4@2x.jpg 2x" width="233" height="233" alt="Фото продукта"
+              class="join-us__img">
+          </picture>
         </div>
         <div class="join-us__img-container">
-          <img src="img/item5.jpg" alt="Фото продукта" class="join-us__img">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/item5-mobile@1x.webp 1x,
+            img/item5-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/item5-mobile@1x.jpg 1x,
+                            img/item5-mobile@2x.jpg 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item5-tablet@1x.webp 1x,
+                            img/item5-tablet@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item5-tablet@1x.jpg 1x,
+                            img/item5-tablet@2x.jpg 2x" type="image/webp">
+            <source srcset="img/item5@1x.webp 1x,
+                            img/item5@2x.webp 2x" type="image/webp">
+            <img src="img/item5@1x.jpg" srcset="img/item5@2x.jpg 2x" width="233" height="233" alt="Фото продукта"
+              class="join-us__img">
+          </picture>
         </div>
         <div class="join-us__img-container">
-          <img src="img/item6.jpg" alt="Фото продукта" class="join-us__img">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/item6-mobile@1x.webp 1x,
+            img/item6-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/item6-mobile@1x.jpg 1x,
+                            img/item6-mobile@2x.jpg 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item6-tablet@1x.webp 1x,
+                            img/item6-tablet@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/item6-tablet@1x.jpg 1x,
+                            img/item6-tablet@2x.jpg 2x" type="image/webp">
+            <source srcset="img/item6@1x.webp 1x,
+                            img/item6@2x.webp 2x" type="image/webp">
+            <img src="img/item6@1x.jpg" srcset="img/item6@2x.jpg 2x" width="233" height="233" alt="Фото продукта"
+              class="join-us__img">
+          </picture>
         </div>
       </div>
       <div class="join-us__txt-container">
@@ -668,7 +730,6 @@
       </div>
     </div>
   </footer>
-  <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
   <script src="js/bundle.js"></script>
 </body>
 
