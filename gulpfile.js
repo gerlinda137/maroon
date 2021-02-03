@@ -6,18 +6,19 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var csso = require('gulp-csso');
-var imagemin = require('gulp-imagemin');
+var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 var del = require("del");
-var webpack = require('webpack');
-var webpackStream = require('webpack-stream');
-var webpackConfig = require('./webpack.config.js');
+var webpack = require("webpack");
+var webpackStream = require("webpack-stream");
+var webpackConfig = require("./webpack.config.js");
 
-gulp.task('compress', function() {
-  gulp.src('img/*')
-  .pipe(imagemin())
-  .pipe(gulp.dest('build/img'))
+gulp.task("compress", function () {
+  return gulp
+    .src("source/img/**")
+    .pipe(imagemin())
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("css", function () {
@@ -35,9 +36,9 @@ gulp.task("css", function () {
 
 gulp.task("js", function () {
   return gulp
-    .src('./source/js/index.js')
+    .src("./source/js/index.js")
     .pipe(webpackStream(webpackConfig), webpack)
-    .pipe(gulp.dest('./build/js'));
+    .pipe(gulp.dest("./build/js"));
 });
 
 gulp.task("clean", function () {
@@ -52,9 +53,10 @@ gulp.task("copy", function () {
         "source/img/**",
         // "source/js/**",
         "source/*.html",
-        "source/*.ico"
-      ], {
-        base: "source"
+        "source/*.ico",
+      ],
+      {
+        base: "source",
       }
     )
     .pipe(gulp.dest("build"));
@@ -68,19 +70,24 @@ gulp.task("refresh", function (done) {
 gulp.task("server", function () {
   server.init({
     server: {
-      baseDir:'build',
+      baseDir: "build",
       routes: {
-        '/node_modules': 'node_modules'
-      }
-    } ,
+        "/node_modules": "node_modules",
+      },
+    },
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
   });
 
-  gulp.watch("source/**", gulp.series("build", "refresh"));
+  gulp.watch("source/**", gulp.series("build_development", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "js"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task(
+  "build_release",
+  gulp.series("clean", "copy", "css", "js", "compress")
+);
+
+gulp.task("build_development", gulp.series("clean", "copy", "css", "js"));
+gulp.task("start", gulp.series("build_development", "server"));
